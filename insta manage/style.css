@@ -1,0 +1,220 @@
+/* Reset + Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #1e1e2f, #28284a);
+  color: #fff;
+  min-height: 100vh;
+  padding: 2rem;
+  animation: fadeIn 1.2s ease-in;
+}
+
+h1 {
+  font-size: 3rem;
+  background: linear-gradient(to right, #00f9ff, #ff6bff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+p {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #cfcfe2;
+}
+
+/* Layout */
+.hero {
+  max-width: 900px;
+  margin: auto;
+  text-align: center;
+  padding: 2rem;
+  border-radius: 1.5rem;
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* Feature Cards */
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.feature-card {
+  background: rgba(255, 255, 255, 0.08);
+  padding: 1.5rem;
+  border-radius: 1rem;
+  transition: transform 0.3s ease, background 0.3s ease;
+  cursor: pointer;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px) scale(1.02);
+  background: rgba(255, 255, 255, 0.12);
+}
+
+/* CTA Button */
+.cta button {
+  background: linear-gradient(to right, #00f9ff, #ff6bff);
+  color: #fff;
+  font-size: 1.1rem;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 2rem;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.cta button:hover {
+  transform: scale(1.05);
+}
+
+/* Message */
+#message {
+  margin-top: 1rem;
+  font-size: 1rem;
+  color: #a1e1ff;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Navbar */
+.navbar {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(6px);
+  padding: 1rem 2rem;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+}
+.logo {
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+}
+.nav-links a:hover {
+  color: #ff7de9;
+}
+
+/* Push content below navbar */
+body {
+  padding-top: 80px;
+}
+
+/* Explainer section */
+.explainer {
+  text-align: center;
+  margin-top: 4rem;
+  padding: 2rem;
+}
+.steps {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+.step {
+  background: #2a2a40;
+  padding: 1rem 1.5rem;
+  border-radius: 12px;
+  color: #fff;
+  font-size: 1.1rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+.email-signup {
+  text-align: center;
+  margin: 3rem auto;
+  padding: 2rem;
+  border-radius: 1rem;
+  background: rgba(255, 255, 255, 0.03);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+  max-width: 400px;
+}
+
+.email-signup input {
+  padding: 0.75rem;
+  width: 70%;
+  margin: 1rem 0;
+  border: none;
+  border-radius: 8px;
+}
+
+.email-signup button {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(to right, #00f0ff, #f500c6);
+  color: white;
+  cursor: pointer;
+}
+
+#form-message {
+  color: lightgreen;
+  margin-top: 1rem;
+}
+.demo-section {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.demo-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.demo-section p {
+  font-size: 1.1rem;
+  margin-bottom: 40px;
+  color: #ccc;
+}
+
+.demo-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.demo-card {
+  background: #1e1e2f;
+  border-radius: 16px;
+  padding: 20px;
+  width: 300px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.demo-card:hover {
+  transform: translateY(-10px);
+}
+
+.demo-card img {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 15px;
+}

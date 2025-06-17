@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>InstaHaus — Your AI Instagram Assistant</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Navbar -->
+<nav class="navbar">
+  <div class="logo">🚀 InstaHaus</div>
+  <ul class="nav-links">
+    <li><a href="#features">Features</a></li>
+    <li><a href="#explainer">How It Works</a></li>
+    <li><a href="#cta">Join</a></li>
+  </ul>
+</nav>
+
+  <div class="hero">
+    <header>
+      <h1>🚀 InstaHaus</h1>
+      <p>AI-powered Instagram Assistant for Interior Designers</p>
+    </header>
+
+    <section id="features" class="features" data-aos="fade-up">
+
+      <div class="feature-card">
+        <h2>📸 Auto Post Renders</h2>
+        <p>Upload renders and let InstaHaus auto-post with trending hashtags & captions.</p>
+      </div>
+      <div class="feature-card">
+        <h2>✍️ AI Captions</h2>
+        <p>Generate high-converting captions for any theme or room style instantly.</p>
+      </div>
+      <div class="feature-card">
+        <h2>📅 Fully Automated</h2>
+        <p>Schedule a month’s content and let InstaHaus do the rest.</p>
+      </div>
+    </section>
+<section id="explainer" class="explainer" data-aos="fade-right">
+
+  <h2>📽️ How InstaHaus Works</h2>
+  <div class="steps">
+    <div class="step">🖼️ Upload Renders</div>
+    <div class="step">🤖 AI Generates Captions + Hashtags</div>
+    <div class="step">📅 Auto-Post to Instagram</div>
+  </div>
+</section>
+
+<section id="cta" class="cta" data-aos="zoom-in">
+
+  <button onclick="showComingSoon()">Join Early Access</button>
+  <p id="message"></p>
+</section>
+
+    <section id="cta" class="cta">
+      <section class="email-signup">
+  <h3>📩 Get Notified</h3>
+  <p>Join the waitlist and be the first to try InstaHaus.</p>
+  <form id="signup-form">
+    <input type="email" id="email" placeholder="Enter your email" required />
+    <button type="submit">Notify Me</button>
+  </form>
+  <p id="form-message"></p>
+</section>
+
+
+      <button onclick="showComingSoon()">Join Early Access</button>
+      <p id="message"></p>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+<section id="demo" class="demo-section" data-aos="fade-up">
+  <h2>🎨 Room/Style Demo</h2>
+  <p>Here’s a sneak peek of AI-generated room renders by theme.</p>
+  
+  <div class="demo-grid">
+    <div class="demo-card">
+      <img src="https://via.placeholder.com/300x200?text=Modern+Living+Room" alt="Modern Living Room" />
+      <h3>Modern Living Room</h3>
+    </div>
+    <div class="demo-card">
+      <img src="https://via.placeholder.com/300x200?text=Boho+Bedroom" alt="Boho Bedroom" />
+      <h3>Boho Bedroom</h3>
+    </div>
+    <div class="demo-card">
+      <img src="https://via.placeholder.com/300x200?text=Minimal+Kitchen" alt="Minimal Kitchen" />
+      <h3>Minimal Kitchen</h3>
+    </div>
+  </div>
+</section>
+
+</body>
+</html>
